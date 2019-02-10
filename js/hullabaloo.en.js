@@ -159,7 +159,7 @@
           next = idx + 1;
           // If there are other alerts in the array, raise them to the place of the closed one
           if (this.hullabaloos.length > 1 && next < this.hullabaloos.length) {
-            / subtract the upper bound of the closed alert from the upper bound of the next alert
+            // subtract the upper bound of the closed alert from the upper bound of the next alert
             // and calculate how much to move all alerts
             move = this.hullabaloos[next].position - this.hullabaloos[idx].position;
 
