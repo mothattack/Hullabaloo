@@ -12,7 +12,7 @@ The plugin [bootstrap-growl] (https://github.com/ifightcrime/bootstrap-growl) wa
 
 Connect the bootstrap styles or the style files `hullabaloo.css` and` hullabaloo.js` to your page. Create the main hullabaloo object and call.
 
-`` javascript
+```javascript
 // init
 $ .hulla = new hullabaloo ();
 // Set the position of the alert and indent from the top
@@ -28,13 +28,13 @@ $ .hulla.send ("Welcome!", "success");
 
 // Forced cancellation of grouping
 $ .hulla.send ("Welcome!", "success", 0);
-`` `
+```
 
 ## Additional functions
 
 You can customize the call of your functions at different moments of the life of the alert
 
-`` javascript
+```javascript
 // F-Ia will be executed as soon as the alert is displayed on the screen, but before it disappears
 $ .hulla.options.fnEnd = function () {
     alert ("Alert got out and disappear soon")
@@ -49,15 +49,15 @@ $ .hulla.options.fnStart = function () {
 $ .hulla.options.fnEndHide = function () {
     alert ("Alert closed");
 }
-`` `
+```
 
 ## Options
 
 Change default options
 
-`` javascript
+```javascript
 $ .hulla.options. <option> = <value>;
-`` `
+```
 
 List of available options:
 
